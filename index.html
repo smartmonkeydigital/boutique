@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélection Luxe & Artisanat | Boutique Curated</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .disclosure {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 0.9rem;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-category {
+            color: #667eea;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+        
+        .product-price {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .btn-amazon {
+            display: inline-block;
+            background: #FF9900;
+            color: #111;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn-amazon:hover {
+            background: #ffaa33;
+        }
+        
+        .features {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .feature-item {
+            padding: 20px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>✨ Sélection Luxe & Artisanat</h1>
+            <p>Des produits d'exception soigneusement choisis pour vous</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="disclosure">
+            <strong>Transparence :</strong> Cette page contient des liens affiliés Amazon. Si vous achetez via ces liens, je peux recevoir une commission sans coût supplémentaire pour vous.
+        </div>
+        
+        <div class="products-grid">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/613b28uGMOL._AC_UL480_FMwebp_QL65_.jpg" alt="Montre Seiko 5 Sports" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">⌚ Montres de Luxe</div>
+                    <h3 class="product-title">Montre Seiko 5 Sports Automatic</h3>
+                    <div class="product-price">~350€</div>
+                    <a href="https://link.amazon/B00m44C6j" class="btn-amazon" target="_blank" rel="nofollow">Voir sur Amazon →</a>
+                </div>
+            </div>
+            
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71rHpjsnVbL._AC_UL480_FMwebp_QL65_.jpg" alt="Sac Michael Kors" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">👜 Maroquinerie Luxe</div>
+                    <h3 class="product-title">Sac à main Michael Kors Jet Set</h3>
+                    <div class="product-price">~280€</div>
+                    <a href="https://link.amazon/B05T00PYQ" class="btn-amazon" target="_blank" rel="nofollow">Voir sur Amazon →</a>
+                </div>
+            </div>
+            
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71MDgFSQ1uL._AC_UL480_FMwebp_QL65_.jpg" alt="Collier Or 18K" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">💎 Bijoux Premium</div>
+                    <h3 class="product-title">Collier en Or 18K avec Pendentif</h3>
+                    <div class="product-price">~220€</div>
+                    <a href="https://link.amazon/B0hHWjPDh" class="btn-amazon" target="_blank" rel="nofollow">Voir sur Amazon →</a>
+                </div>
+            </div>
+            
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41yvnTPnERS._AC_UL480_FMwebp_QL65_.jpg" alt="La Mer Crème" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">🧴 Beauté de Luxe</div>
+                    <h3 class="product-title">La Mer Crème Hydratante (60ml)</h3>
+                    <div class="product-price">~210€</div>
+                    <a href="https://link.amazon/B02eXfj2Y" class="btn-amazon" target="_blank" rel="nofollow">Voir sur Amazon →</a>
+                </div>
+            </div>
+            
+            <!-- Produit 5 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41y6GD1ehUL._AC_UL480_FMwebp_QL65_.jpg" alt="Bijou Personnalisé" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">🎁 Artisanat Handmade</div>
+                    <h3 class="product-title">Bijou Personnalisé avec Gravure</h3>
+                    <div class="product-price">~80€</div>
+                    <a href="https://link.amazon/B02XIuvCr" class="btn-amazon" target="_blank" rel="nofollow">Voir sur Amazon →</a>
+                </div>
+ </div>
+            
+            <!-- Produit 6 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/912oSRbbocL._AC_UL480_FMwebp_QL65_.jpg" alt="Tableau Peint Main" class="product-image">
+                <div class="product-info">
+                    <div class="product-category">🖼️ Décoration Artisanale</div>
+                    <h3 class="product-title">Tableau Peint Main Abstrait</h3>
+                    <div class="product-price">~150€</div>
+                    <a href="https://link.amazon/B0j2MNN1B" class="btn-amazon" target="_blank" rel="nofollow">Voir sur Amazon →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="features">
+        <div class="container">
+            <h2>Pourquoi cette sélection ?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h3>Produits Premium</h3>
+                    <p>Chaque produit est soigneusement sélectionné pour sa qualité et son design</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Artisanat Unique</h3>
+                    <p>Des pièces faites main par des artisans passionnés</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Achat Sécurisé</h3>
+                    <p>Transactions protégées via Amazon avec garantie de satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2026 Sélection Luxe & Artisanat - Tous droits réservés</p>
+            <p>Cette page participe au Programme Partenaires d'Amazon EU</p>
+        </div>
+    </footer>
+</body>
+</html>
